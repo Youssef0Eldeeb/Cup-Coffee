@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A15D4000290B544600C053FF /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D3FFF290B544600C053FF /* CustomSearchBar.swift */; };
+		A15D4007290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D4005290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift */; };
+		A15D4008290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D4006290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib */; };
+		A15D400C290C960900C053FF /* PopularCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D400B290C960900C053FF /* PopularCoffee.swift */; };
+		A15D400F290CA62A00C053FF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D400D290CA62A00C053FF /* CollectionViewCell.swift */; };
+		A15D4010290CA62A00C053FF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D400E290CA62A00C053FF /* CollectionViewCell.xib */; };
 		A17B78A5290985AE0082CF50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A4290985AE0082CF50 /* AppDelegate.swift */; };
 		A17B78A7290985AE0082CF50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A6290985AE0082CF50 /* SceneDelegate.swift */; };
 		A17B78A9290985AE0082CF50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A8290985AE0082CF50 /* ViewController.swift */; };
@@ -18,7 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A15D3FFF290B544600C053FF /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		A15D4005290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A15D4006290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A15D400B290C960900C053FF /* PopularCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCoffee.swift; sourceTree = "<group>"; };
+		A15D400D290CA62A00C053FF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A15D400E290CA62A00C053FF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		A17B78A1290985AE0082CF50 /* Cup Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cup Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17B78A4290985AE0082CF50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A17B78A6290985AE0082CF50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,9 +53,62 @@
 			isa = PBXGroup;
 			children = (
 				A17B78BA290A0CBD0082CF50 /* CustomTabBar.swift */,
-				A15D3FFF290B544600C053FF /* CustomSearchBar.swift */,
+				A15D4003290C82EE00C053FF /* CollectionViewCells */,
 			);
 			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		A15D4001290C821C00C053FF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A17B78A6290985AE0082CF50 /* SceneDelegate.swift */,
+				A17B78A4290985AE0082CF50 /* AppDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A15D4002290C827400C053FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A17B78B82909FFD30082CF50 /* Main.storyboard */,
+				A17B78AF290985B10082CF50 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A15D4003290C82EE00C053FF /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A15D4004290C830B00C053FF /* PopularCoffeeCell */,
+				A15D400D290CA62A00C053FF /* CollectionViewCell.swift */,
+				A15D400E290CA62A00C053FF /* CollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		A15D4004290C830B00C053FF /* PopularCoffeeCell */ = {
+			isa = PBXGroup;
+			children = (
+				A15D4005290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift */,
+				A15D4006290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib */,
+			);
+			path = PopularCoffeeCell;
+			sourceTree = "<group>";
+		};
+		A15D4009290C932200C053FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A17B78A8290985AE0082CF50 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A15D400A290C932A00C053FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A15D400B290C960900C053FF /* PopularCoffee.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A17B7898290985AE0082CF50 = {
@@ -69,13 +130,12 @@
 		A17B78A3290985AE0082CF50 /* Cup Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				A15D400A290C932A00C053FF /* Model */,
+				A15D4009290C932200C053FF /* Controller */,
+				A15D4002290C827400C053FF /* View */,
+				A15D4001290C821C00C053FF /* Utilities */,
 				A15D3FFE290B541500C053FF /* CustomComponents */,
-				A17B78A4290985AE0082CF50 /* AppDelegate.swift */,
-				A17B78A6290985AE0082CF50 /* SceneDelegate.swift */,
-				A17B78A8290985AE0082CF50 /* ViewController.swift */,
-				A17B78B82909FFD30082CF50 /* Main.storyboard */,
 				A17B78AD290985B10082CF50 /* Assets.xcassets */,
-				A17B78AF290985B10082CF50 /* LaunchScreen.storyboard */,
 				A17B78B2290985B10082CF50 /* Info.plist */,
 			);
 			path = "Cup Coffee";
@@ -141,7 +201,9 @@
 			files = (
 				A17B78B1290985B10082CF50 /* LaunchScreen.storyboard in Resources */,
 				A17B78B92909FFD30082CF50 /* Main.storyboard in Resources */,
+				A15D4008290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib in Resources */,
 				A17B78AE290985B10082CF50 /* Assets.xcassets in Resources */,
+				A15D4010290CA62A00C053FF /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A17B78BB290A0CBD0082CF50 /* CustomTabBar.swift in Sources */,
+				A15D4007290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift in Sources */,
 				A17B78A9290985AE0082CF50 /* ViewController.swift in Sources */,
-				A15D4000290B544600C053FF /* CustomSearchBar.swift in Sources */,
+				A15D400F290CA62A00C053FF /* CollectionViewCell.swift in Sources */,
 				A17B78A5290985AE0082CF50 /* AppDelegate.swift in Sources */,
 				A17B78A7290985AE0082CF50 /* SceneDelegate.swift in Sources */,
+				A15D400C290C960900C053FF /* PopularCoffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
