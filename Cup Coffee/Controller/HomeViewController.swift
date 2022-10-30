@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageUser: UIImageView!
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView{
         case popularCoffeeCollectionView:
@@ -99,6 +99,16 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
             return UICollectionViewCell()
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == popularCoffeeCollectionView {
+            let vc = UIViewController(nibName: "DetailsViewController", bundle: nil)
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }else{
+           print("elseeeeeeeeeeeee")
+        }
     }
     
     
