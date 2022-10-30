@@ -10,8 +10,6 @@
 		A15D4007290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D4005290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift */; };
 		A15D4008290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D4006290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib */; };
 		A15D400C290C960900C053FF /* PopularCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D400B290C960900C053FF /* PopularCoffee.swift */; };
-		A15D400F290CA62A00C053FF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D400D290CA62A00C053FF /* CollectionViewCell.swift */; };
-		A15D4010290CA62A00C053FF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D400E290CA62A00C053FF /* CollectionViewCell.xib */; };
 		A17B78A5290985AE0082CF50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A4290985AE0082CF50 /* AppDelegate.swift */; };
 		A17B78A7290985AE0082CF50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A6290985AE0082CF50 /* SceneDelegate.swift */; };
 		A17B78A9290985AE0082CF50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A8290985AE0082CF50 /* ViewController.swift */; };
@@ -19,14 +17,16 @@
 		A17B78B1290985B10082CF50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17B78AF290985B10082CF50 /* LaunchScreen.storyboard */; };
 		A17B78B92909FFD30082CF50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17B78B82909FFD30082CF50 /* Main.storyboard */; };
 		A17B78BB290A0CBD0082CF50 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78BA290A0CBD0082CF50 /* CustomTabBar.swift */; };
+		A1AE897C290D4F28007A174C /* NearestCoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE897A290D4F28007A174C /* NearestCoffeeCollectionViewCell.swift */; };
+		A1AE897D290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AE897B290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib */; };
+		A1AE897F290D707A007A174C /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE897E290D707A007A174C /* CoffeeShop.swift */; };
+		A1AE8982290D7642007A174C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE8981290D7642007A174C /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A15D4005290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A15D4006290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
 		A15D400B290C960900C053FF /* PopularCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCoffee.swift; sourceTree = "<group>"; };
-		A15D400D290CA62A00C053FF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		A15D400E290CA62A00C053FF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		A17B78A1290985AE0082CF50 /* Cup Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cup Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17B78A4290985AE0082CF50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A17B78A6290985AE0082CF50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +36,10 @@
 		A17B78B2290985B10082CF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17B78B82909FFD30082CF50 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A17B78BA290A0CBD0082CF50 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		A1AE897A290D4F28007A174C /* NearestCoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestCoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1AE897B290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearestCoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1AE897E290D707A007A174C /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
+		A1AE8981290D7642007A174C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A15D4004290C830B00C053FF /* PopularCoffeeCell */,
-				A15D400D290CA62A00C053FF /* CollectionViewCell.swift */,
-				A15D400E290CA62A00C053FF /* CollectionViewCell.xib */,
+				A1AE8979290D4ED7007A174C /* NearestCoffeeCell */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -107,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				A15D400B290C960900C053FF /* PopularCoffee.swift */,
+				A1AE897E290D707A007A174C /* CoffeeShop.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +134,7 @@
 		A17B78A3290985AE0082CF50 /* Cup Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				A1AE8980290D7626007A174C /* Extensions */,
 				A15D400A290C932A00C053FF /* Model */,
 				A15D4009290C932200C053FF /* Controller */,
 				A15D4002290C827400C053FF /* View */,
@@ -139,6 +144,23 @@
 				A17B78B2290985B10082CF50 /* Info.plist */,
 			);
 			path = "Cup Coffee";
+			sourceTree = "<group>";
+		};
+		A1AE8979290D4ED7007A174C /* NearestCoffeeCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1AE897A290D4F28007A174C /* NearestCoffeeCollectionViewCell.swift */,
+				A1AE897B290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib */,
+			);
+			path = NearestCoffeeCell;
+			sourceTree = "<group>";
+		};
+		A1AE8980290D7626007A174C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1AE8981290D7642007A174C /* UIView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AE897D290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib in Resources */,
 				A17B78B1290985B10082CF50 /* LaunchScreen.storyboard in Resources */,
 				A17B78B92909FFD30082CF50 /* Main.storyboard in Resources */,
 				A15D4008290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib in Resources */,
 				A17B78AE290985B10082CF50 /* Assets.xcassets in Resources */,
-				A15D4010290CA62A00C053FF /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,9 +239,11 @@
 				A17B78BB290A0CBD0082CF50 /* CustomTabBar.swift in Sources */,
 				A15D4007290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift in Sources */,
 				A17B78A9290985AE0082CF50 /* ViewController.swift in Sources */,
-				A15D400F290CA62A00C053FF /* CollectionViewCell.swift in Sources */,
 				A17B78A5290985AE0082CF50 /* AppDelegate.swift in Sources */,
 				A17B78A7290985AE0082CF50 /* SceneDelegate.swift in Sources */,
+				A1AE897F290D707A007A174C /* CoffeeShop.swift in Sources */,
+				A1AE8982290D7642007A174C /* UIView+.swift in Sources */,
+				A1AE897C290D4F28007A174C /* NearestCoffeeCollectionViewCell.swift in Sources */,
 				A15D400C290C960900C053FF /* PopularCoffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

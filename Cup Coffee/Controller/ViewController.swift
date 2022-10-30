@@ -22,6 +22,14 @@ class ViewController: UIViewController {
         .init(image: UIImage(named: "popularCoffee01"), time: "7 min delivery", rating: "5.0", title: " Coffee", price: "515.00", location: "Coffee hut"),
         .init(image: UIImage(named: "popularCoffee01"), time: "10 min delivery", rating: "5.0", title: "Cappuccino", price: "550.00", location: "Coffee cafe")
     ]
+    var cofffeeShops: [CoffeeShop] = [
+        .init(image: UIImage(named: "CoffeeShop01"), title: "Asley coffee", rating: "5.0/ 105 ratings", destance: "1.5 km"),
+        .init(image: UIImage(named: "CoffeeShop02"), title: "Old town coffee", rating: "4.0/ 125 ratings", destance: "2.4 km"),
+        .init(image: UIImage(named: "CoffeeShop01"), title: "Asley coffee", rating: "5.0/ 105 ratings", destance: "1.5 km"),
+        .init(image: UIImage(named: "CoffeeShop02"), title: "Old town coffee", rating: "4.0/ 125 ratings", destance: "2.4 km")
+    
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +39,9 @@ class ViewController: UIViewController {
         
         popularCoffeeCollectionView.delegate = self
         popularCoffeeCollectionView.dataSource = self
+        
+        nearestCoffeeCollectionView.delegate = self
+        nearestCoffeeCollectionView.dataSource = self
     }
     private func setupUI(){
         
@@ -54,6 +65,7 @@ class ViewController: UIViewController {
     }
     private func registerCell(){
         popularCoffeeCollectionView.register(UINib(nibName: PopularCoffeeCollectionViewCell.identifire, bundle: nil), forCellWithReuseIdentifier: PopularCoffeeCollectionViewCell.identifire)
+        nearestCoffeeCollectionView.register(UINib(nibName: NearestCoffeeCollectionViewCell.identifire, bundle: nil), forCellWithReuseIdentifier: NearestCoffeeCollectionViewCell.identifire)
     }
 
 
@@ -61,14 +73,31 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return popularCoffees.count
+        switch collectionView{
+        case popularCoffeeCollectionView:
+            return popularCoffees.count
+        case nearestCoffeeCollectionView:
+            return cofffeeShops.count
+        default:
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularCoffeeCollectionViewCell.identifire, for: indexPath) as! PopularCoffeeCollectionViewCell
-        
-        cell.setup(popularCoffees[indexPath.row])
-        return cell
+        switch collectionView{
+        case popularCoffeeCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularCoffeeCollectionViewCell.identifire, for: indexPath) as! PopularCoffeeCollectionViewCell
+            
+            cell.setup(popularCoffees[indexPath.row])
+            return cell
+        case nearestCoffeeCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NearestCoffeeCollectionViewCell.identifire, for: indexPath) as! NearestCoffeeCollectionViewCell
+            
+            cell.setup(cofffeeShops[indexPath.row])
+            return cell
+        default:
+            return UICollectionViewCell()
+        }
         
     }
     

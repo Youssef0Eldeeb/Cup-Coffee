@@ -17,7 +17,12 @@ class PopularCoffeeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var coffeeName: UILabel!
     @IBOutlet weak var Price: UILabel!
     @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var heartBtn: UIButton!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        heartBtn.layer.cornerRadius = heartBtn.frame.size.width / 2
+    }
     
     func setup(_ coffee: PopularCoffee){
         
