@@ -12,7 +12,6 @@
 		A15D400C290C960900C053FF /* PopularCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D400B290C960900C053FF /* PopularCoffee.swift */; };
 		A17B78A5290985AE0082CF50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A4290985AE0082CF50 /* AppDelegate.swift */; };
 		A17B78A7290985AE0082CF50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A6290985AE0082CF50 /* SceneDelegate.swift */; };
-		A17B78A9290985AE0082CF50 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A8290985AE0082CF50 /* HomeViewController.swift */; };
 		A17B78AE290985B10082CF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17B78AD290985B10082CF50 /* Assets.xcassets */; };
 		A17B78B1290985B10082CF50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17B78AF290985B10082CF50 /* LaunchScreen.storyboard */; };
 		A17B78B92909FFD30082CF50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17B78B82909FFD30082CF50 /* Main.storyboard */; };
@@ -21,8 +20,9 @@
 		A1AE897D290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AE897B290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib */; };
 		A1AE897F290D707A007A174C /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE897E290D707A007A174C /* CoffeeShop.swift */; };
 		A1AE8982290D7642007A174C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE8981290D7642007A174C /* UIView+.swift */; };
-		A1AE898A290E85BF007A174C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE8988290E85BF007A174C /* DetailsViewController.swift */; };
 		A1AE898B290E85BF007A174C /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AE8989290E85BF007A174C /* DetailsViewController.xib */; };
+		A1EDA68F29112FCE00D99AF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A8290985AE0082CF50 /* HomeViewController.swift */; };
+		A1EDA69029112FEC00D99AF1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE8988290E85BF007A174C /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -245,14 +245,14 @@
 			files = (
 				A17B78BB290A0CBD0082CF50 /* CustomTabBar.swift in Sources */,
 				A15D4007290C833D00C053FF /* PopularCoffeeCollectionViewCell.swift in Sources */,
-				A17B78A9290985AE0082CF50 /* HomeViewController.swift in Sources */,
 				A17B78A5290985AE0082CF50 /* AppDelegate.swift in Sources */,
 				A17B78A7290985AE0082CF50 /* SceneDelegate.swift in Sources */,
 				A1AE897F290D707A007A174C /* CoffeeShop.swift in Sources */,
+				A1EDA68F29112FCE00D99AF1 /* HomeViewController.swift in Sources */,
 				A1AE8982290D7642007A174C /* UIView+.swift in Sources */,
 				A1AE897C290D4F28007A174C /* NearestCoffeeCollectionViewCell.swift in Sources */,
 				A15D400C290C960900C053FF /* PopularCoffee.swift in Sources */,
-				A1AE898A290E85BF007A174C /* DetailsViewController.swift in Sources */,
+				A1EDA69029112FEC00D99AF1 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
