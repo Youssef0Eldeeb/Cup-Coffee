@@ -57,7 +57,10 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func addToCartBtn(_ sender: UIButton) {
-        print("add to cart pressed")
+        let vc = OrderViewController.instantiate(name: .Order)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: false)
     }
     
 

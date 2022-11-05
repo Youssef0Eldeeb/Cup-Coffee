@@ -103,13 +103,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == popularCoffeeCollectionView {
-            let vc = DetailsViewController(nibName: "DetailsViewController", bundle: .main)
+            let vc = DetailsViewController.instantiate(name: .Details)
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            present(vc, animated: false)
             
         }else{
-           print("elseeeeeeeeeeeee")
+            let vc = NearbyCafesViewController.instantiate(name: .NearbyCafes)
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: false)
         }
     }
     
