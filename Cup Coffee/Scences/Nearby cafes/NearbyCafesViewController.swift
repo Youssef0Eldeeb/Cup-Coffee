@@ -22,6 +22,12 @@ class NearbyCafesViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction func viewProductsBtn(_ sender: UIButton) {
+        let vc = ReserveViewController.instantiate(name: .Reserve)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: false)
+    }
     
 
 }

@@ -23,6 +23,7 @@ extension UIViewController{
         case Details = "Details"
         case Order = "Order"
         case NearbyCafes = "NearbyCafes"
+        case Reserve = "Reserve"
         
     }
     

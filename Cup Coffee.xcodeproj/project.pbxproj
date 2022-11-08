@@ -20,6 +20,9 @@
 		A1AE897D290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AE897B290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib */; };
 		A1AE897F290D707A007A174C /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE897E290D707A007A174C /* CoffeeShop.swift */; };
 		A1AE8982290D7642007A174C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE8981290D7642007A174C /* UIView+.swift */; };
+		A1DF1624291A77F500DEAE57 /* ShopSpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF1622291A77F500DEAE57 /* ShopSpecialCollectionViewCell.swift */; };
+		A1DF1625291A77F500DEAE57 /* ShopSpecialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DF1623291A77F500DEAE57 /* ShopSpecialCollectionViewCell.xib */; };
+		A1DF1627291A7AF400DEAE57 /* ShopSpecial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF1626291A7AF400DEAE57 /* ShopSpecial.swift */; };
 		A1EDA68F29112FCE00D99AF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B78A8290985AE0082CF50 /* HomeViewController.swift */; };
 		A1EDA69029112FEC00D99AF1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE8988290E85BF007A174C /* DetailsViewController.swift */; };
 		A1EDA6972912624600D99AF1 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA6952912624600D99AF1 /* OrderViewController.swift */; };
@@ -34,6 +37,8 @@
 		A1F6DF4029165DC900A6A1D4 /* Reload.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1F6DF3E29165DC900A6A1D4 /* Reload.gif */; };
 		A1F6DF43291663E800A6A1D4 /* GIFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6DF42291663E800A6A1D4 /* GIFLoader.swift */; };
 		A1F6DF452916656400A6A1D4 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6DF442916656400A6A1D4 /* DoneViewController.swift */; };
+		A1F6DF48291A658000A6A1D4 /* Reserve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F6DF47291A658000A6A1D4 /* Reserve.storyboard */; };
+		A1F6DF4A291A659400A6A1D4 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6DF49291A659400A6A1D4 /* ReserveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,9 @@
 		A1AE897E290D707A007A174C /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
 		A1AE8981290D7642007A174C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		A1AE8988290E85BF007A174C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A1DF1622291A77F500DEAE57 /* ShopSpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSpecialCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1DF1623291A77F500DEAE57 /* ShopSpecialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopSpecialCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1DF1626291A7AF400DEAE57 /* ShopSpecial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSpecial.swift; sourceTree = "<group>"; };
 		A1EDA6952912624600D99AF1 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		A1EDA69B2912AB1700D99AF1 /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
 		A1EDA69D2912B00600D99AF1 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
@@ -66,6 +74,8 @@
 		A1F6DF3E29165DC900A6A1D4 /* Reload.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Reload.gif; sourceTree = "<group>"; };
 		A1F6DF42291663E800A6A1D4 /* GIFLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFLoader.swift; sourceTree = "<group>"; };
 		A1F6DF442916656400A6A1D4 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		A1F6DF47291A658000A6A1D4 /* Reserve.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reserve.storyboard; sourceTree = "<group>"; };
+		A1F6DF49291A659400A6A1D4 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 		A15D4003290C82EE00C053FF /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				A1DF1621291A77B500DEAE57 /* ShopSpecialCell */,
 				A15D4004290C830B00C053FF /* PopularCoffeeCell */,
 				A1AE8979290D4ED7007A174C /* NearestCoffeeCell */,
 			);
@@ -120,6 +131,7 @@
 			children = (
 				A15D400B290C960900C053FF /* PopularCoffee.swift */,
 				A1AE897E290D707A007A174C /* CoffeeShop.swift */,
+				A1DF1626291A7AF400DEAE57 /* ShopSpecial.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,9 +188,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A1DF1621291A77B500DEAE57 /* ShopSpecialCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1DF1622291A77F500DEAE57 /* ShopSpecialCollectionViewCell.swift */,
+				A1DF1623291A77F500DEAE57 /* ShopSpecialCollectionViewCell.xib */,
+			);
+			path = ShopSpecialCell;
+			sourceTree = "<group>";
+		};
 		A1EDA6912911CA4000D99AF1 /* Scences */ = {
 			isa = PBXGroup;
 			children = (
+				A1F6DF46291A653E00A6A1D4 /* Reserve */,
 				A1EDA6A12912CE7400D99AF1 /* Nearby cafes */,
 				A1EDA6942912622400D99AF1 /* Order */,
 				A1EDA6932911CA7B00D99AF1 /* Details */,
@@ -232,6 +254,15 @@
 				A1F6DF42291663E800A6A1D4 /* GIFLoader.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A1F6DF46291A653E00A6A1D4 /* Reserve */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6DF47291A658000A6A1D4 /* Reserve.storyboard */,
+				A1F6DF49291A659400A6A1D4 /* ReserveViewController.swift */,
+			);
+			path = Reserve;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,11 +325,13 @@
 			files = (
 				A1EDA6A32912CECD00D99AF1 /* NearbyCafes.storyboard in Resources */,
 				A1AE897D290D4F28007A174C /* NearestCoffeeCollectionViewCell.xib in Resources */,
+				A1F6DF48291A658000A6A1D4 /* Reserve.storyboard in Resources */,
 				A17B78B1290985B10082CF50 /* LaunchScreen.storyboard in Resources */,
 				A1F6DF4029165DC900A6A1D4 /* Reload.gif in Resources */,
 				A1EDA69C2912AB1700D99AF1 /* Order.storyboard in Resources */,
 				A17B78B92909FFD30082CF50 /* Main.storyboard in Resources */,
 				A1F6DF3F29165DC900A6A1D4 /* Done.gif in Resources */,
+				A1DF1625291A77F500DEAE57 /* ShopSpecialCollectionViewCell.xib in Resources */,
 				A15D4008290C833D00C053FF /* PopularCoffeeCollectionViewCell.xib in Resources */,
 				A17B78AE290985B10082CF50 /* Assets.xcassets in Resources */,
 				A1EDA69E2912B00600D99AF1 /* Details.storyboard in Resources */,
@@ -317,10 +350,12 @@
 				A1F6DF3A2916587F00A6A1D4 /* UIImageView+.swift in Sources */,
 				A1EDA6A02912B02900D99AF1 /* UIViewController+.swift in Sources */,
 				A1F6DF3C291658F300A6A1D4 /* ReloadViewController.swift in Sources */,
+				A1F6DF4A291A659400A6A1D4 /* ReserveViewController.swift in Sources */,
 				A17B78A5290985AE0082CF50 /* AppDelegate.swift in Sources */,
 				A1EDA6A52912CEE400D99AF1 /* NearbyCafesViewController.swift in Sources */,
 				A1F6DF43291663E800A6A1D4 /* GIFLoader.swift in Sources */,
 				A17B78A7290985AE0082CF50 /* SceneDelegate.swift in Sources */,
+				A1DF1624291A77F500DEAE57 /* ShopSpecialCollectionViewCell.swift in Sources */,
 				A1AE897F290D707A007A174C /* CoffeeShop.swift in Sources */,
 				A1EDA68F29112FCE00D99AF1 /* HomeViewController.swift in Sources */,
 				A1AE8982290D7642007A174C /* UIView+.swift in Sources */,
@@ -329,6 +364,7 @@
 				A1EDA6972912624600D99AF1 /* OrderViewController.swift in Sources */,
 				A1EDA69029112FEC00D99AF1 /* DetailsViewController.swift in Sources */,
 				A1F6DF452916656400A6A1D4 /* DoneViewController.swift in Sources */,
+				A1DF1627291A7AF400DEAE57 /* ShopSpecial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
