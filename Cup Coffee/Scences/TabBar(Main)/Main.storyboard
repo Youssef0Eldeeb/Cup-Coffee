@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -262,21 +263,55 @@
             </objects>
             <point key="canvasLocation" x="641" y="162"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="uET-SH-vD9">
             <objects>
-                <viewController id="mlk-17-yfv" sceneMemberID="viewController">
+                <viewController id="mlk-17-yfv" customClass="MapViewController" customModule="Cup_Coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lnA-Ox-KZ7">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mEV-hM-Gjw">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearby Hotels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-34-O6V">
+                                <rect key="frame" x="141" y="44" width="108.33333333333331" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yee-cT-IZI">
+                                <rect key="frame" x="10" y="44" width="46" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="semibold"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PKD-IX-4sB"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254914049999996" blue="0.97254902119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NRO-34-O6V" firstAttribute="top" secondItem="PKD-IX-4sB" secondAttribute="top" id="9ZP-Lm-lzg"/>
+                            <constraint firstItem="yee-cT-IZI" firstAttribute="leading" secondItem="PKD-IX-4sB" secondAttribute="leading" constant="10" id="CrN-rV-t61"/>
+                            <constraint firstItem="yee-cT-IZI" firstAttribute="top" secondItem="PKD-IX-4sB" secondAttribute="top" id="PRw-JU-q7m"/>
+                            <constraint firstItem="NRO-34-O6V" firstAttribute="centerX" secondItem="lnA-Ox-KZ7" secondAttribute="centerX" id="aAT-9S-UHW"/>
+                            <constraint firstItem="mEV-hM-Gjw" firstAttribute="leading" secondItem="PKD-IX-4sB" secondAttribute="leading" id="dqB-z6-Okj"/>
+                            <constraint firstItem="NRO-34-O6V" firstAttribute="centerY" secondItem="yee-cT-IZI" secondAttribute="centerY" id="fZo-P1-6VO"/>
+                            <constraint firstItem="mEV-hM-Gjw" firstAttribute="top" secondItem="lnA-Ox-KZ7" secondAttribute="top" id="feg-j2-h06"/>
+                            <constraint firstAttribute="bottom" secondItem="mEV-hM-Gjw" secondAttribute="bottom" id="fx0-4U-TpC"/>
+                            <constraint firstItem="mEV-hM-Gjw" firstAttribute="trailing" secondItem="PKD-IX-4sB" secondAttribute="trailing" id="rzr-aS-RlM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="map-pin" id="uTU-dx-05u"/>
+                    <connections>
+                        <outlet property="mapView" destination="mEV-hM-Gjw" id="QEe-4m-10S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfH-dA-XkL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="811"/>
+            <point key="canvasLocation" x="640" y="810.42654028436016"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="J5E-57-rBG">
@@ -335,6 +370,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="heart" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
         <image name="map-pin" width="24" height="24"/>
@@ -347,5 +383,8 @@
         <namedColor name="CoffeeColor">
             <color red="1" green="0.68999999761581421" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
