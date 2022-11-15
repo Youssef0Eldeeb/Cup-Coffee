@@ -17,10 +17,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var nearestCoffeeCollectionView: UICollectionView!
     
     var popularCoffees: [PopularCoffee] = [
-        .init(image: UIImage(named: "popularCoffee01"), time: "10 min delivery", rating: "5.0", title: "Cappuccino", price: "550.00", location: "Coffee cafe"),
-        .init(image: UIImage(named: "popularCoffee01"), time: "7 min delivery", rating: "5.0", title: "Chocolate coffee", price: "510.00", location: "Bunny cafe"),
-        .init(image: UIImage(named: "popularCoffee01"), time: "7 min delivery", rating: "5.0", title: " Coffee", price: "515.00", location: "Coffee hut"),
-        .init(image: UIImage(named: "popularCoffee01"), time: "10 min delivery", rating: "5.0", title: "Cappuccino", price: "550.00", location: "Coffee cafe")
+        .init(image: UIImage(named: "Cappuccino"), time: "10 min delivery", rating: "5.0", title: "Cappuccino", price: "550.00", location: "Coffee cafe"),
+        .init(image: UIImage(named: "Chocolate Coffee"), time: "7 min delivery", rating: "5.0", title: "Chocolate Coffee", price: "510.00", location: "Bunny cafe"),
+        .init(image: UIImage(named: "Coffee Milk"), time: "7 min delivery", rating: "5.0", title: " Coffee Milk", price: "515.00", location: "Coffee hut"),
+        .init(image: UIImage(named: "Coffee"), time: "10 min delivery", rating: "5.0", title: "Coffee", price: "550.00", location: "Coffee cafe")
     ]
     var cofffeeShops: [CoffeeShop] = [
         .init(image: UIImage(named: "CoffeeShop01"), title: "Asley coffee", rating: "5.0/ 105 ratings", destance: "1.5 km"),
@@ -104,6 +104,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == popularCoffeeCollectionView {
             let vc = DetailsViewController.instantiate(name: .Details)
+            vc.comingPopularCoffee = popularCoffees[indexPath.row]
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: false)

@@ -177,47 +177,56 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dn2-U0-G3U">
                                                         <rect key="frame" x="5" y="0.0" width="364" height="37"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpt-NG-06N">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpt-NG-06N">
                                                                 <rect key="frame" x="0.0" y="0.0" width="108" height="37"/>
                                                                 <color key="backgroundColor" name="DarkGreenColor"/>
+                                                                <color key="tintColor" name="BackgroundColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="100 ml">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                                                    <color key="baseForegroundColor" name="BackgroundColor"/>
                                                                 </buttonConfiguration>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                         <real key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="quantityBtns:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LjL-TP-QCd"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afw-N4-6Zt">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afw-N4-6Zt">
                                                                 <rect key="frame" x="128" y="0.0" width="108" height="37"/>
                                                                 <color key="backgroundColor" name="BackgroundColor"/>
+                                                                <color key="tintColor" name="DarkGreenColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="250 ml">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                                                    <color key="baseForegroundColor" name="DarkGreenColor"/>
                                                                 </buttonConfiguration>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                         <real key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="quantityBtns:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="i4r-GQ-3dE"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-tZ-Qqo">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-tZ-Qqo">
                                                                 <rect key="frame" x="256" y="0.0" width="108" height="37"/>
                                                                 <color key="backgroundColor" name="BackgroundColor"/>
+                                                                <color key="tintColor" name="DarkGreenColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="500 ml">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                                                    <color key="baseForegroundColor" name="DarkGreenColor"/>
                                                                 </buttonConfiguration>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                         <real key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="quantityBtns:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lJr-dI-Crk"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -246,7 +255,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Qg-ep-Xjz">
                                                                         <rect key="frame" x="5" y="5" width="164" height="42"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-l8-WgC">
+                                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-l8-WgC">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="42"/>
                                                                                 <color key="backgroundColor" name="CoffeeColor-10opacity"/>
                                                                                 <state key="normal" title="Button"/>
@@ -263,13 +272,13 @@
                                                                                     <action selector="coffeeNumberBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e4t-50-1m6"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEG-sT-TaL">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEG-sT-TaL">
                                                                                 <rect key="frame" x="58" y="0.0" width="48" height="42"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjQ-Xm-iB9">
+                                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjQ-Xm-iB9">
                                                                                 <rect key="frame" x="116" y="0.0" width="48" height="42"/>
                                                                                 <color key="backgroundColor" name="CoffeeColor"/>
                                                                                 <state key="normal" title="Button"/>
@@ -414,7 +423,9 @@
                         <outlet property="coffeeImage" destination="nKw-jB-2Xi" id="vEL-zn-PZq"/>
                         <outlet property="discription" destination="OBX-Qh-9rz" id="yhS-sJ-coX"/>
                         <outlet property="heartBtn" destination="bMy-pP-y1e" id="jJg-5W-sDi"/>
+                        <outlet property="orderNumber" destination="YEG-sT-TaL" id="Kuc-j3-bl6"/>
                         <outlet property="price" destination="tcn-sj-LNR" id="QZb-sd-Ed8"/>
+                        <outlet property="quantity00" destination="Cpt-NG-06N" id="uGD-7k-WrY"/>
                         <outlet property="quantity01" destination="afw-N4-6Zt" id="axv-I8-TXW"/>
                         <outlet property="quantity02" destination="hRV-tZ-Qqo" id="nU1-Xc-bad"/>
                         <outlet property="rating" destination="TqT-ob-B0f" id="Z4o-T9-KCV"/>
