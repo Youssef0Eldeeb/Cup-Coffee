@@ -17,6 +17,13 @@ class ReloadViewController: UIViewController {
         let gifImage = UIImage.gifImageWithName("Reload")
         reloadImge.image = gifImage
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            let storyboard = UIStoryboard(name: "Order", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "DoneViewController") as! DoneViewController
+            controller.modalPresentationStyle = .fullScreen
+            self.present(controller, animated: true)
+        }
+        
     }
     
 

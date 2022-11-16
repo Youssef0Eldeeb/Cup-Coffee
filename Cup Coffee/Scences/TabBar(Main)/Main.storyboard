@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Cup_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Cup_Coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,21 +314,52 @@
             </objects>
             <point key="canvasLocation" x="640" y="810.42654028436016"/>
         </scene>
-        <!--View Controller-->
+        <!--Fevorite View Controller-->
         <scene sceneID="J5E-57-rBG">
             <objects>
-                <viewController id="XaH-w4-Ucc" sceneMemberID="viewController">
+                <viewController id="XaH-w4-Ucc" customClass="FevoriteViewController" customModule="Cup_Coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fb1-k9-JdP">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QCT-d4-ivz">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="amx-lt-pUm">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="r3F-ii-YiQ">
+                                        <rect key="frame" x="0.0" y="10" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mRX-dA-XgM">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ptF-Po-Hcb"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254914049999996" blue="0.97254902119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QCT-d4-ivz" firstAttribute="top" secondItem="ptF-Po-Hcb" secondAttribute="top" id="R3r-TQ-Fux"/>
+                            <constraint firstItem="QCT-d4-ivz" firstAttribute="leading" secondItem="ptF-Po-Hcb" secondAttribute="leading" id="fSq-UP-GF6"/>
+                            <constraint firstItem="ptF-Po-Hcb" firstAttribute="trailing" secondItem="QCT-d4-ivz" secondAttribute="trailing" id="le9-zh-Cqz"/>
+                            <constraint firstItem="ptF-Po-Hcb" firstAttribute="bottom" secondItem="QCT-d4-ivz" secondAttribute="bottom" id="qIT-rh-y7f"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heart" id="Xs5-a9-Z8B"/>
+                    <connections>
+                        <outlet property="collectionVeiw" destination="QCT-d4-ivz" id="h7h-nh-vaX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDJ-5a-29b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="1468"/>
+            <point key="canvasLocation" x="640" y="1467.2985781990521"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ga3-j9-eVk">
@@ -348,7 +380,7 @@
         <!--Custom Tab Bar-->
         <scene sceneID="7LL-73-LI7">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QH1-1F-w6M" customClass="CustomTabBar" customModule="Cup_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" automaticallyAdjustsScrollViewInsets="NO" id="QH1-1F-w6M" customClass="CustomTabBar" customModule="Cup_Coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GNU-EP-PkI">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

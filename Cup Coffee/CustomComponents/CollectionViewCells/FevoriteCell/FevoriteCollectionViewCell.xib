@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FevoriteCollectionViewCell" id="gTV-IL-0wX" customClass="FevoriteCollectionViewCell" customModule="Cup_Coffee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCY-TU-c1B" customClass="CardView" customModule="Cup_Coffee" customModuleProvider="target">
+                        <rect key="frame" x="5" y="2" width="360" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avocado Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="I8o-3b-SOa">
+                                <rect key="frame" x="12" y="12" width="76" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="Hhg-U7-MCG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PZ6-cW-eg9">
+                                <rect key="frame" x="98" y="28.5" width="232" height="43.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liJ-A4-ZbE">
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Et-RH-6dU">
+                                        <rect key="frame" x="0.0" y="26.5" width="232" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Deb-nn-5SV"/>
+                            <constraint firstAttribute="bottom" secondItem="I8o-3b-SOa" secondAttribute="bottom" constant="12" id="Ifj-96-wG6"/>
+                            <constraint firstItem="I8o-3b-SOa" firstAttribute="leading" secondItem="dCY-TU-c1B" secondAttribute="leading" constant="12" id="NjM-aa-WIL"/>
+                            <constraint firstItem="I8o-3b-SOa" firstAttribute="top" secondItem="dCY-TU-c1B" secondAttribute="top" constant="12" id="Onz-hZ-Fsp"/>
+                            <constraint firstAttribute="trailing" secondItem="PZ6-cW-eg9" secondAttribute="trailing" constant="30" id="UqI-uK-LPN"/>
+                            <constraint firstAttribute="width" constant="360" id="hfs-1g-etA"/>
+                            <constraint firstItem="PZ6-cW-eg9" firstAttribute="centerY" secondItem="I8o-3b-SOa" secondAttribute="centerY" id="s7p-Ly-TIz"/>
+                            <constraint firstItem="PZ6-cW-eg9" firstAttribute="leading" secondItem="I8o-3b-SOa" secondAttribute="trailing" constant="10" id="zC2-Wv-YSm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="dCY-TU-c1B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="5Fd-db-CfZ"/>
+                <constraint firstAttribute="bottom" secondItem="dCY-TU-c1B" secondAttribute="bottom" constant="2" id="GPL-AF-1bn"/>
+                <constraint firstAttribute="trailing" secondItem="dCY-TU-c1B" secondAttribute="trailing" constant="5" id="NYa-MV-069"/>
+                <constraint firstItem="dCY-TU-c1B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Nc2-wU-dqm"/>
+            </constraints>
+            <size key="customSize" width="372" height="111"/>
+            <connections>
+                <outlet property="image" destination="I8o-3b-SOa" id="0ye-T3-Rcx"/>
+                <outlet property="name" destination="liJ-A4-ZbE" id="Mna-xA-sgT"/>
+                <outlet property="price" destination="9Et-RH-6dU" id="ddD-ER-bh6"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="-14.0625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Avocado Coffee" width="176" height="202"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
