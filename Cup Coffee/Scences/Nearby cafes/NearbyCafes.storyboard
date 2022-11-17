@@ -208,6 +208,7 @@
                     </view>
                     <connections>
                         <outlet property="backBtn" destination="fas-Yp-um6" id="LNd-8I-E4w"/>
+                        <outlet property="mapView" destination="VzJ-0V-yKh" id="I33-i5-JAz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
